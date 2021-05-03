@@ -8,13 +8,13 @@ To download and install just run these commands, a) or b), depending in your sit
 
 a) for single IP
 
-	wget --no-check-certificate https://raw.github.com/h1777/3proxy-socks/master/3proxyinstaller.sh
+	wget --no-check-certificate https://raw.github.com/bomzene/bomproxy/master/3proxyinstaller.sh
     chmod +x 3proxyinstaller.sh
     ./3proxyinstaller.sh
 
 b) for multiple IP's (this will download a different .cfg file prepared for multiple IPs)
 
-    wget --no-check-certificate https://raw.github.com/h1777/3proxy-socks/master/3proxy_installerX.sh
+    wget --no-check-certificate https://raw.github.com/bomzene/bomproxy/master/3proxy_installerX.sh
     chmod +x 3proxy_installerX.sh
     ./3proxy_installerX.sh
     
@@ -26,8 +26,8 @@ Example line inside .proxyauth for user and password are separated by :CL:
 
     johndoe:CL:password123
 
-You can also change the port, default is 3128 (OPTIONAL but you should do it). 
-Change port in line 42 >> socks -n -p3128 -a 
+You can also change the port, default is 8000 (OPTIONAL but you should do it). 
+Change port in line 42 >> socks -n -p8000 -a 
 
     nano /etc/3proxy/3proxy.cfg
     
@@ -39,11 +39,11 @@ Once you've changed the username / password you can start the proxy
 	
 For Uninstall Download, make executable and run with these lines :
 
-	wget --no-check-certificate https://raw.github.com/h1777/3proxy-socks/master/3proxyuninst.sh
+	wget --no-check-certificate https://raw.github.com/bomzene/bomproxy/master/3proxyuninst.sh
 	chmod +x 3proxyuninst.sh
 	./3proxyuninst.sh
 
-**Script last tested in August 2018 on the following fresh VPS install distros :**
+**Script last tested in May 2021 on the following fresh VPS install distros :**
 
 - Ubuntu 16.04 64bit
 - Debian 8
