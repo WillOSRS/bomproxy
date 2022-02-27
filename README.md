@@ -26,8 +26,8 @@ Example line inside .proxyauth for user and password are separated by :CL:
 
     johndoe:CL:password123
 
-You can also change the port, default is 8000 (OPTIONAL but you should do it). 
-Change port in line 42 >> socks -n -p8000 -a 
+You can also change the port, default SOCKS is 8088 (OPTIONAL but you should do it). 
+Change port >> socks -n -p8088 -a 
 
     nano /etc/3proxy/3proxy.cfg
     
