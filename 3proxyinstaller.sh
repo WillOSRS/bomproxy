@@ -1,8 +1,9 @@
+version=0.8.13
 apt-get update && apt-get -y upgrade
-apt-get install -y build-essential nano
-wget --no-check-certificate https://github.com/z3APA3A/3proxy/archive/0.8.12.tar.gz
-tar xzf 0.8.12.tar.gz
-cd 3proxy-0.8.12
+apt-get install gcc make git -y
+wget --no-check-certificate -O 3proxy-${version}.tar.gz https://github.com/z3APA3A/3proxy/archive/${version}.tar.gz
+tar xzf 3proxy-${version}.tar.gz
+cd 3proxy-${version}
 make -f Makefile.Linux
 cd src
 mkdir /etc/3proxy/
